@@ -7,7 +7,7 @@
 
 <h2>Tests</h2>
 <ul>
-<li><span class="sr-only">Waiting: </span><span>1. <code>parseLink("[freeCodeCamp](https://freecodecamp.org/)")</code> should return <code>'&lt;a href="https://freecodecamp.org/"&gt;freeCodeCamp&lt;/a&gt;'</code>.</span></li>
-<li><span class="sr-only">Waiting: </span><span>2. <code>parseLink("[Donate to our charity.](https://www.freecodecamp.org/donate/)")</code> should return <code>'&lt;a href="https://www.freecodecamp.org/donate/"&gt;Donate to our charity.&lt;/a&gt;'</code>.</span></li>
-<li><span class="sr-only">Waiting: </span><span>3. <code>parseLink("[Contribute to our repository at https://github.com/freeCodeCamp/freeCodeCamp.](https://github.com/freeCodeCamp/freeCodeCamp/)")</code> should return <code>'&lt;a href="https://github.com/freeCodeCamp/freeCodeCamp/"&gt;Contribute to our repository at https://github.com/freeCodeCamp/freeCodeCamp.&lt;/a&gt;'</code>.</span></li>
+<li>1. <code>parseLink("[freeCodeCamp](https://freecodecamp.org/)")</code> should return <code>'&lt;a href="https://freecodecamp.org/"&gt;freeCodeCamp&lt;/a&gt;'</code>.</li>
+<li>2. <code>parseLink("[Donate to our charity.](https://www.freecodecamp.org/donate/)")</code> should return <code>'&lt;a href="https://www.freecodecamp.org/donate/"&gt;Donate to our charity.&lt;/a&gt;'</code>.</li>
+<li>3. <code>parseLink("[Contribute to our repository at https://github.com/freeCodeCamp/freeCodeCamp.](https://github.com/freeCodeCamp/freeCodeCamp/)")</code> should return <code>'&lt;a href="https://github.com/freeCodeCamp/freeCodeCamp/"&gt;Contribute to our repository at https://github.com/freeCodeCamp/freeCodeCamp.&lt;/a&gt;'</code>.</li>
 </ul>
