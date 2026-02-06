@@ -23,8 +23,3 @@ href="link">Content 
 </a>
 "[freeCodeCamp]
 (https://
-freecodecamp.org/)" 
-'<a href="https://
-freecodecamp.org/
-">freeCodeCamp</a>'
- */
