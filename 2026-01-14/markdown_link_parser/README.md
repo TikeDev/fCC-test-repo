@@ -5,3 +5,4 @@
 <p>For example, given <code>"[freeCodeCamp](https://freecodecamp.org/)"</code> return <code>'&lt;a href="https://freecodecamp.org/"&gt;freeCodeCamp&lt;/a&gt;'</code>;</p>
 <p>Note: The console may not display HTML tags in strings when logging messages — check the browser console to see logs with tags included.</p>
 
+<h2>Tests</h2>

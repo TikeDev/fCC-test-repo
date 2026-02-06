@@ -1,4 +1,6 @@
-let split = 
+function parseLink
+(markdown) {
+  let split = 
 markdown.split("](");
   let text = split[0].
 slice(1, split[0].
@@ -21,4 +23,8 @@ href="link">Content </
 a>
 "[freeCodeCamp]
 (https://freecodecamp.
-org/)"
+org/)" 
+'<a href="https://
+freecodecamp.org/
+">freeCodeCamp</a>'
+ */
