@@ -1,1 +1,26 @@
-<span><span class="mtk8">function</span><span class="mtk1">&nbsp;parseLink</span></span><span><span class="mtk10">(</span><span class="mtk1">markdown</span><span class="mtk10">)</span><span class="mtk1">&nbsp;</span><span class="mtk10">{</span></span><span><span class="mtk1">&nbsp;&nbsp;</span><span class="mtk8">let</span><span class="mtk1">&nbsp;split&nbsp;</span><span class="mtk4">=</span><span class="mtk1">&nbsp;</span></span><span><span class="mtk1">markdown</span><span class="mtk4">.</span><span class="mtk1">split</span><span class="mtk10">(</span><span class="mtk5">"]("</span><span class="mtk10">)</span><span class="mtk4">;</span></span><span><span class="mtk1">&nbsp;&nbsp;</span><span class="mtk8">let</span><span class="mtk1">&nbsp;text&nbsp;</span><span class="mtk4">=</span><span class="mtk1">&nbsp;split</span><span class="mtk9">[</span><span class="mtk6">0</span><span class="mtk9">]</span><span class="mtk4">.</span></span><span><span class="mtk1">slice</span><span class="mtk10">(</span><span class="mtk6">1</span><span class="mtk4">,</span><span class="mtk1">&nbsp;split</span><span class="mtk9">[</span><span class="mtk6">0</span><span class="mtk9">]</span><span class="mtk4">.</span></span><span><span class="mtk1">length</span><span class="mtk10">)</span><span class="mtk4">;</span></span><span><span class="mtk1">&nbsp;&nbsp;</span><span class="mtk8">let</span><span class="mtk1">&nbsp;url&nbsp;</span><span class="mtk4">=</span><span class="mtk1">&nbsp;split</span><span class="mtk9">[</span><span class="mtk6">1</span><span class="mtk9">]</span><span class="mtk4">.</span></span><span><span class="mtk1">slice</span><span class="mtk10">(</span><span class="mtk6">0</span><span class="mtk4">,</span><span class="mtk1">&nbsp;split</span><span class="mtk9">[</span><span class="mtk6">1</span><span class="mtk9">]</span><span class="mtk4">.</span></span><span><span class="mtk1">length</span><span class="mtk4">-</span><span class="mtk6">1</span><span class="mtk10">)</span></span><span><span class="mtk1">&nbsp;&nbsp;</span><span class="mtk8">return</span><span class="mtk1">&nbsp;</span><span class="mtk5">`&lt;a&nbsp;href="</span><span class="mtk10">$</span></span><span><span class="mtk10">{</span><span class="mtk1">url</span><span class="mtk10">}</span><span class="mtk5">"&gt;</span><span class="mtk10">${</span><span class="mtk1">text</span><span class="mtk10">}</span><span class="mtk5">&lt;/a&gt;`</span><span class="mtk4">;</span></span><span><span class="mtk10">}</span></span><span><span></span></span><span><span class="mtk7">/*</span></span><span><span class="mtk7">Input:&nbsp;markdown&nbsp;</span></span><span><span class="mtk7">format&nbsp;image&nbsp;link</span></span><span><span class="mtk7">"[link_text](link_url)</span></span><span><span class="mtk7">"</span></span><span><span></span></span><span><span class="mtk7">Output:&nbsp;anchor&nbsp;tag&nbsp;w&nbsp;</span></span><span><span class="mtk7">href&nbsp;and&nbsp;content</span></span><span><span class="mtk7">&lt;a&nbsp;</span></span><span><span class="mtk7">href="link"&gt;Content&nbsp;&lt;/</span></span><span><span class="mtk7">a&gt;</span></span><span><span></span></span>
+function parseLink
+(markdown) {
+  let split = 
+markdown.split("](");
+  let text = split[0].
+slice(1, split[0].
+length);
+  let url = split[1].
+slice(0, split[1].
+length-1)
+  return `<a href="$
+{url}">${text}</a>`;
+}
+
+/*
+Input: markdown 
+format image link
+"[link_text](link_url)
+"
+
+Output: anchor tag w 
+href and content
+<a 
+href="link">Content </
+a>
+
